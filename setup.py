@@ -8,7 +8,7 @@ setup(
   author = 'SoC-eame',                   # Type in your name
   author_email = 'soceame@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/DRubioG/pyBraille',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/user/reponame/archive/v_01.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/DRubioG/pyBraille/archive/refs/tags/v_01.tar.gz',    # I explain this later on
   keywords = ['TRANSLATOR', 'BRAILLE'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           
