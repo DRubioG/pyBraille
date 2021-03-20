@@ -1,5 +1,7 @@
 
 class pyBraille():
+    """ Translator to Braille
+    """
     def __init__(self, black=chr(9679), white=chr(9675)):
        self.black=black
        self.white=white
@@ -15,6 +17,19 @@ class pyBraille():
        self.str=""
        
     def translate(self, text):
+        """ Translator method
+
+        Parameters
+        ----------
+        text : string
+             Text to translate
+
+        Return
+        ------
+        self.str : string
+                 Braille text
+
+        """
         for i in range(3):
             if i>0:
                 self.str+="\n"
@@ -49,24 +64,22 @@ class pyBraille():
 
     
     def line0(self, str):
+        """Text for caracter 0"""
         return str+self.white+' '+self.white+' '    #   ○ ○
     
     def line1(self, str):
+        """Text for caracter 1"""
         return str+self.white+' '+self.black+' '    #   ○ ●
     
     def line2(self, str):
+        """Text for caracter 2"""
         return str+self.black+' '+self.white+' '    #   ● ○
     
     def line3(self, str):
+        """Text for caracter 3"""
         return str+self.black+' '+self.black+' '    #   ● ●
     
     def space(self, str):
+        """Text for caracter <space>"""
         return str+' '*3
     
-    
-
-
-if __name__=="__main__":
-    a=pyBraille()
-    
-    print(a.translate("Ó"))
