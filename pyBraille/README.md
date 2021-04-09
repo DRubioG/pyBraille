@@ -7,3 +7,4 @@ a=pyBraille()
 print(a.translate("Hola Mundo"))
 ```
 
+![](gif.gif)
